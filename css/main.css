@@ -1,4 +1,3 @@
-
 :root {
     --main-color: #7f5539;
     --hover-color: #b08968;
@@ -123,25 +122,108 @@ body {
     grid-area: footer;
 }
 
-.footer__links {
+.footer p {
+    color: whitesmoke;
+}
+
+.wrapper {
+    display: inline-flex;
+    list-style: none;
+}
+
+.wrapper .icon {
+    position: relative;
+    background: #ffffff;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
     display: flex;
-    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .hidden {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .hidden::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .hidden {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .hidden {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook {
     text-align: center;
 }
 
-.footer__links a:hover {
-    background-color: var(--hover-color);
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .hidden,
+.wrapper .facebook:hover .hidden::before {
+    background: #1877f2;
+    color: #ffffff;
 }
 
-.footer__links a {
-    border: 1px solid;
-    border-radius: 50%;
-    padding: 10px;
-    color: whitesmoke;
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .hidden,
+.wrapper .twitter:hover .hidden::before {
+    background: #1da1f2;
+    color: #ffffff;
 }
 
-.footer p {
-    color: whitesmoke;
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .hidden,
+.wrapper .instagram:hover .hidden::before {
+    background: #e4405f;
+    color: #ffffff;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .hidden,
+.wrapper .github:hover .hidden::before {
+    background: #333333;
+    color: #ffffff;
+}
+
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .hidden,
+.wrapper .youtube:hover .hidden::before {
+    background: #cd201f;
+    color: #ffffff;
 }
 
 /* footer responsive mobile */
@@ -555,6 +637,11 @@ body {
     background-color: whitesmoke;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: radial-gradient(
+        circle,
+        rgba(177, 116, 78, 0.227328431372549) 0%,
+        rgba(176, 137, 104, 0.7287289915966386) 100%
+    );
 }
 
 .formulario h3 {

@@ -87,26 +87,26 @@
         <section class="contact">
             <h2 class="contact__title">Contacto</h2>
 
-            <div class="formulario">
-                <form action="index.html">
-                    <h3>¿Querés realizar un pedido?</h3>
-                    <div class="input">
-                        <span class="fas fa-user"></span>
-                        <input type="text" placeholder="nombre" />
+            <div class="formulario container">
+                <form action="index.html" class="container">
+                    <h3 class="p-5">¿Querés realizar un pedido?</h3>
+                    <div class="input-group input-group mb-5" id="nombre">
+                        <span class="input-group-text" id="inputGroup-sizing-default"><i class="fas fa-user"></i></span>
+                        <input type="text" class="form-control" aria-label="Sizing example input" placeholder="nombre" aria-describedby="inputGroup-sizing-sm">
                     </div>
-                    <div class="input">
-                        <span class="fas fa-envelope"></span>
-                        <input type="email" placeholder="email" />
+                    <div class="input-group input-group mb-5" id="email">
+                        <span class="input-group-text " id="inputGroup-sizing-default"><i class="fas fa-envelope"></i></span>
+                        <input type="text" class="form-control" aria-label="Sizing example input" placeholder="email" aria-describedby="inputGroup-sizing-sm">
                     </div>
-                    <div class="input">
-                        <span class="fas fa-phone"></span>
-                        <input type="number" placeholder="telefono" />
+                    <div class="input-group input-group mb-3" id="telefono">
+                        <span class="input-group-text " id="inputGroup-sizing-default"><i class="fas fa-phone"></i></span>
+                        <input type="text" class="form-control" aria-label="Sizing example input" placeholder="telefono" aria-describedby="inputGroup-sizing-sm">
                     </div>
-                    <input type="submit" value="Aceptar" class="btn" />
+                    <input type="submit" value="Aceptar" class="btn mb-5" />
                 </form>
             </div>
         </section>
-
+        
         <footer class="footer">
             <p>
                 Hecho con <i class="fa fa-heart"></i> por <b>Francisco Bayer</b>

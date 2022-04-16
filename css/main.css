@@ -103,6 +103,10 @@ body {
     .footer p {
         display: none;
     }
+
+    .wrapper {
+        padding-left: 0;
+    }
 }
 
 /* Inicio */
@@ -374,15 +378,16 @@ body {
 /* Contacto */
 
 .contact {
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     grid-area: section;
+    margin-bottom: 120px;
 }
 
 .contact__title {
     text-align: center;
+    margin-top: 100px;
     padding: 50px;
     font-size: 35px;
     text-transform: uppercase;
@@ -391,42 +396,15 @@ body {
 }
 
 .formulario {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    width: 50%;
-    height: 500px;
     text-align: center;
-    background-color: whitesmoke;
-    border-radius: 10px;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    background: linear-gradient(180deg, rgba(177,116,78,0.227328431372549) 0%, rgba(176,137,104,0.7287289915966386) 100%);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background: radial-gradient(
-        circle,
-        rgba(177, 116, 78, 0.227328431372549) 0%,
-        rgba(176, 137, 104, 0.7287289915966386) 100%
-    );
+    border-radius: 25px;
 }
 
-.formulario h3 {
-    padding: 20px;
-    font-size: 28px;
-    font-weight: 400;
-}
-
-.formulario .input {
-    padding: 20px;
-}
-
-.formulario .input span {
-    width: 30px;
-}
-
-.formulario .input input {
-    border-radius: 10px;
-    text-align: start;
-    padding: 10px;
-    width: 30%;
-}
 
 .formulario .btn {
     padding: 10px;
@@ -443,6 +421,13 @@ body {
     background-color: var(--btn-hover);
     transform: scale(1.05, 1.05);
 }
+
+#nombre, #email, #telefono {
+    width: 50%;
+    margin: auto;
+    border-radius: 25px;
+}
+
 
 /* formulario responsive mobile */
 

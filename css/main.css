@@ -278,6 +278,10 @@ body {
     font-size: 16px;
 }
 
+.cafe-description h3 {
+    font-size: 16px;
+}
+
 .cafe:hover {
     transform: scale(1.02, 1.02);
 }
@@ -305,7 +309,13 @@ body {
     .cafe {
         font-size: 14px;
         justify-content: space-between;
+        width: 50%;
     }
+
+    .cafe:hover {
+        transform: none;
+    }
+
     .cafe .price {
         font-size: 12px;
     }

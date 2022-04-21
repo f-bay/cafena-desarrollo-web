@@ -1,0 +1,31 @@
+@import "colores";
+@import "icons";
+@import "footer";
+@import "header";
+@import "home";
+@import "about";
+@import "menu";
+@import "products";
+@import "contact";
+@import "responsive";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    background-color: #ebebeb;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "section"
+        "footer";
+    grid-template-rows: 25%, 55%, 20%;
+    grid-template-columns: 1fr;
+    width: 100%;
+}

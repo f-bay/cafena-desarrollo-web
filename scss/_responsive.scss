@@ -1,0 +1,54 @@
+// RESPONSIVE 
+
+@media screen and (max-width: 600px) {
+    
+    // INICIO
+    .home {
+        text-align: center;
+        margin: none;
+        background-image: linear-gradient(to bottom, #ebebeb, whitesmoke);
+        .content {
+            align-items: center;
+            margin: auto;
+        }
+    }
+
+    // SOBRE NOSOTROS
+    .about-text {
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+    .about-btn {
+        width: 70%;
+    }
+
+    // MENU
+    .cafe {
+        font-size: 14px;
+        justify-content: space-between;
+        width: 50%;
+        .price {
+            font-size: 12px;
+        }
+    }
+    .cafe:hover {
+        transform: none;
+    }
+
+    // CONTACTO 
+    .contact {
+        width: 100%;
+        height: auto;
+        .formulario {
+            width: auto;
+            margin-bottom: 20px;
+            .input {
+                width: 100%;
+                input {
+                    width: 80%;
+                }
+            }
+        }
+    }
+}

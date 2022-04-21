@@ -1,0 +1,45 @@
+// SOBRE NOSOTROS
+
+.about {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    grid-area: section;
+
+    .about__title {
+        text-align: center;
+        padding: 50px;
+        font-size: 35px;
+        text-transform: uppercase;
+        font-weight: 600;
+        span {
+            color: $main-color;
+        }
+    }
+
+    .about-text {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .about-btn {
+        color: white;
+        text-transform: capitalize;
+        padding: 10px 20px;
+        background-color: $btn-color;
+        border-radius: 20px;
+        margin-bottom: 10px;
+        font-weight: 500;
+        text-decoration: none;
+        cursor: pointer;
+        width: 30%;
+        text-align: center;
+    }
+    .about-btn:hover {
+        background-color: $btn-hover;
+        color: white;
+    }
+}

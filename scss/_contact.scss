@@ -1,0 +1,50 @@
+// CONTACTO
+
+.contact {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    grid-area: section;
+    margin-bottom: 120px;
+    .contact__title {
+        text-align: center;
+        margin-top: 100px;
+        padding: 50px;
+        font-size: 35px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: $main-color;
+    }
+    .formulario {
+        text-align: center;
+        display: flex;
+        gap: 40px;
+        flex-direction: column;
+        background: linear-gradient(
+            180deg,
+            rgba(177, 116, 78, 0.227328431372549) 0%,
+            rgba(176, 137, 104, 0.7287289915966386) 100%
+        );
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 25px;
+        .btn {
+            padding: 10px;
+            width: 30%;
+            background-color: $btn-color;
+            border-radius: 25px;
+            cursor: pointer;
+            color: whitesmoke;
+            transition: all 0.3s;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: $btn-hover;
+            transform: scale(1.05, 1.05);
+        }
+        #nombre, #email, #telefono {
+            width: 50%;
+            margin: auto;
+            border-radius: 25px;
+        }
+    }
+}

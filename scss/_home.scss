@@ -1,0 +1,52 @@
+// INICIO 
+
+.home {
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 90px;
+    height: 100vh;
+    grid-area: section;
+
+    .content {
+        margin-left: 50px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        max-width: 500px;
+
+        .content__title {
+            font-weight: 600;
+            font-size: 35px;
+            margin: 10px;
+            margin-bottom: 20px;
+
+            span {
+                color: $main-color;
+                text-transform: capitalize;
+            }
+        }
+
+        .content__description {
+            line-height: 1.7;
+            margin: 10px;
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            color: whitesmoke;
+            font-weight: 500;
+            font-size: 16px;
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: var(--main-color);
+            transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1);
+        }
+        .content .btn:hover {
+            background: $btn-hover;
+        }
+    }
+
+}

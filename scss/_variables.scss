@@ -1,0 +1,23 @@
+// VARIABLES
+
+@mixin sizes($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+$colores: (
+    main-color: #7f5539,
+    hover-color: #b08968,
+    btn-color: #9c6644,
+    btn-hover: #b1744e
+);
+
+$redes: (
+    facebook: #1877f2,
+    twitter: #1da1f2,
+    instagram: #e4405f,
+    github: #333333,
+    youtube: #cd201f
+);
+
+$box_shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;

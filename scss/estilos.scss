@@ -1,4 +1,4 @@
-@import "colores";
+@import "variables";
 @import "icons";
 @import "footer";
 @import "header";
@@ -18,7 +18,7 @@
 }
 
 body {
-    height: 100vh;
+    @include sizes(100%, 100vh);
     background-color: #ebebeb;
     display: grid;
     grid-template-areas:
@@ -27,5 +27,12 @@ body {
         "footer";
     grid-template-rows: 25%, 55%, 20%;
     grid-template-columns: 1fr;
-    width: 100%;
+}
+
+.title {
+    text-align: center;
+    padding: 50px;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 600;
 }

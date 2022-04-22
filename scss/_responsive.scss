@@ -51,4 +51,17 @@
             }
         }
     }
+
+    // FOOTER
+
+    footer {
+        p {
+            display: none;
+        }
+
+        .wrapper {
+            text-align: center;
+            padding-left: 0;
+        }
+    }
 }

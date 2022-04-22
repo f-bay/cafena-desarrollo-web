@@ -1,19 +1,15 @@
 // CONTACTO
 
 .contact {
-    height: 100%;
+    @include sizes(100%, 100%);
     display: flex;
     flex-direction: column;
     grid-area: section;
     margin-bottom: 120px;
     .contact__title {
-        text-align: center;
+        @extend .title;
         margin-top: 100px;
-        padding: 50px;
-        font-size: 35px;
-        text-transform: uppercase;
-        font-weight: 600;
-        color: $main-color;
+        color: map-get($colores, main-color);
     }
     .formulario {
         text-align: center;
@@ -30,7 +26,7 @@
         .btn {
             padding: 10px;
             width: 30%;
-            background-color: $btn-color;
+            background-color: map-get($colores, btn-color);
             border-radius: 25px;
             cursor: pointer;
             color: whitesmoke;
@@ -38,7 +34,7 @@
             margin-top: 20px;
         }
         .btn:hover {
-            background-color: $btn-hover;
+            background-color: map-get($colores, btn-hover);
             transform: scale(1.05, 1.05);
         }
         #nombre, #email, #telefono {

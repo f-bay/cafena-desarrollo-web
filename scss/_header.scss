@@ -1,9 +1,9 @@
 // HEADER
 
 .header {
-    background-color: $main-color;
+    background-color: map-get($colores, main-color);
     .menu-desplegable {
-        background-color: $hover-color;
+        background-color: map-get($colores, hover-color);
     }
     .logo-img {
         margin-left: 25px;

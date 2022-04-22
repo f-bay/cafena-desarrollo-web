@@ -1,8 +1,8 @@
 // FOOTER
 
 .footer {
-    background-color: $main-color;
-    height: 100px;
+    background-color: map-get($colores, main-color);
+    @include sizes(100%, 100%);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -37,5 +37,11 @@
             transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         }
     }
+}
 
+@each $clave, $valor in $redes {
+    ##{$clave}:hover {
+        background-color: $valor;
+        box-shadow: $box_shadow;
+    }
 }
